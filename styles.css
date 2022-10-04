@@ -1,6 +1,10 @@
 
 
-body,
+body {
+	font-family: 'Lora', sans-serif;
+	width: 100%;
+}
+
 td,
 th,
 tr,
