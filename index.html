@@ -1,89 +1,158 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
+
 <head>
-  <style>
-    body{
-        padding-top: 5%;
-        padding-left: 20%;
-        padding-right: 20%;
-        padding-bottom: 5%;
-    }
-  </style>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <!-- <meta name="viewport" content="initial-scale=1, maximum-scale=1"> -->
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-  <link href="https://fonts.googleapis.com/css?family=Lora|Roboto:500" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet">
-
   <title>Meng Ding</title>
-</head>
-<body>
-  <div class="container mt-3">
-    <div class="row">
-      <div style="height: 20px;width: 20px;">
-        <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=vSPFzfWm34pUkVREShC02uVFvuVjE_61uGArD9vSXBY"></script>
-      </div>
-      <div id="Bio" class="col-6">
-      	<h1>Meng Ding </h1> 
-        <b>Ph.D. student</b>
-        <br>
-        <div id="contact">
-          Department of Computer Science and Engineering<br>
-          University at Buffalo<br>
-          Davis Hall, Buffalo, NY, 14260<br>
-        </div>
-      	<br>
-      	<b>Email:</b> mengding AT buffalo DOT edu
-		<!--<a href="https://github.com/meng-ding">Github</a> --> 
-        <br>
-      </div>
-      <div class="col-5 d-none d-sm-block">
-        <img src="images/me2.jpg" alt="me2.jpg" height="250px" width="auto">
-      </div>
-    </div>
-    <div class="row mt-3">
-      <div class="col">
-        <h5>Bio</h5>
-		    I am currently a Ph.D. student advised by <a href="https://cse.buffalo.edu/~jinhui/" target="_blank">Prof. Jinhui Xu</a> at the State University of New York at Buffalo(UB). Previously, I obtained my Bachelor's degree in Mathematics from China Agricultural University. My Research interests lie in Learning Theory and Trustworthy AI.
-        <br>
-      </div>
-    </div>
-    <br>
-      </div>
-    <div class="row mt-3">
-      <div class="col">
-        <h5>Publications</h5>
-	    <ul>
-	      <li>
-	        <papertitle>Improved Analysis of Sparse Linear Regression in Local Differential Privacy Model</papertitle>
-	        <br>
-		<a href="https://scholar.google.com/citations?user=ZoC_TvoAAAAJ&hl=en">Liyang Zhu<sup>*</sup></a>,
-	        <strong>Meng Ding<sup>*</sup></strong>,
-	        <a href="https://cse.buffalo.edu/~jinhui/index.html">Jinhui Xu</a>,
-		<a href="https://shao3wangdi.github.io/">Di Wang</a>
-	        <br>
-	        <em>ICLR</em>, 2024
-	        <br>
-	        <a href="https://arxiv.org/pdf/2310.07367.pdf">[arXiv]</a>
-	      </li>
-		<li>
-	        <papertitle>Fair Single Index Model</papertitle>
-	        <br>
-		<a>Yidong Wang<sup>*</sup></a>,
-	        <strong>Meng Ding<sup>*</sup></strong>,
-	        <a href="https://cse.buffalo.edu/~jinhui/index.html">Jinhui Xu</a>,
-		<a href="https://shao3wangdi.github.io/">Di Wang</a>
-	        <br>
-	        <em>TKDD</em>, 2024
-	        <br>
-	      </li>
-          </ul>
-      </div>
-    </div>
-</body>
-</html>
 
+  <meta charset="utf-8">
+  <meta name=viewport content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="myweb.css">
+
+  <!-- <link rel="icon" type="image/svg+xml" href="images/ubicon.svg"> -->
+  <link rel="icon" type="image/png" href="images/ubicon.png">
+</head>
+
+<body>
+  <div class="section">
+    <div id="bio">
+      <div class="biotext">
+        <h1>
+          Meng Ding &nbsp;|&nbsp; <span style="white-space: nowrap">丁梦</span>
+          <div style="height: 20px;width: 20px;">
+            <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=vSPFzfWm34pUkVREShC02uVFvuVjE_61uGArD9vSXBY"></script>
+          </div>
+        </h1>
+        <p>
+          I am currently a Ph.D. student advised by <a href="https://cse.buffalo.edu/~jinhui/" >Prof. Jinhui Xu</a> at the State University of New York at Buffalo(UB). 
+          Previously, I obtained my Bachelor's degree in Mathematics from China Agricultural University.
+        </p>
+        <p style="text-align:center">
+          <a href="mailto:mengding@buffalo.edu">Email</a> &nbsp;|&nbsp;
+          <a
+            href="https://scholar.google.com/citations?user=Ipwvf8oAAAAJ&hl=en">Google&nbsp;Scholar</a>
+          &nbsp;|&nbsp;
+        </p>
+      </div>
+      <img src="images/me2.jpg" alt="DM" class="bioimage">
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Research</h2>
+    <div class="content">
+      <p>
+        My research focuses on bridging the gap between theory and practice in machine learning by providing a deep understanding of the underlying theoretical
+        principles.
+        I am now working on the Trustworthy AI and Learning Theory, specifically:
+        <ul>
+          <li>Regression Problems with Differential Privacy </li>
+          <li>Forgetting Behavior in Continual Learning</li>
+        </ul>
+      </p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>News</h2>
+    <div class="content">
+      <ul>
+        <li>[01/2024] One paper accepted to ICLR 2024.</li>
+        <!-- <details>
+          <summary><strong>Prior to 2024</strong></summary>
+          <li>[11/2023] Invited to be the  </li>
+        </details> -->
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Pulications</h2>
+    <span>* indicates equal contribution, &dagger; indicates alphabetical order.</span>
+    <div class="content">
+      <h3>Preprints</h3>
+      <div class="content">
+        <ul>
+          <li>
+            <p><span class="paper">Improved Analysis of Sparse Linear Regression in Local Differential Privacy Model</span>
+              <br>
+              <span class="author">Yidong Wang*,<span class="me">Meng Ding*</span>, Jinhui Xu, Di Wang</span>
+              <br>
+              <span class="venue">Revision, TKDD 2024 </span> &nbsp;|&nbsp;
+              <!-- <a href="">poster</a> -->
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <h3>Refereed Papers</h3>
+      <div class="content">
+        <ul>
+          <li>
+            <p> <a href="https://arxiv.org/pdf/2310.07367.pdf"><span class="paper">Improved Analysis of Sparse Linear Regression in Local Differential Privacy Model</span></a>
+              <br>
+              <span class="author">Liyang Zhu*,<span class="me">Meng Ding*</span>, Jinhui Xu, Di Wang</span>
+              <br>
+              <span class="venue">ICLR 2024 </span> &nbsp;|&nbsp;
+              <!-- <a href="">poster</a> -->
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Services</h2>
+    <div class="content">
+
+      <ul>
+        <li>
+          <p><strong>Conference Reviewer</strong><br>
+            <a href="https://icml.cc">ICML</a> (2023 - 2024),
+            <a href="https://neurips.cc">NeurIPS</a> (2023 - 2023),
+            <a href="https://iclr.cc">ICLR</a> (2022 - 2024),
+            <a href="https://aistats.org">AISTATS</a> (2024 - ),
+          </p>
+        </li>
+
+        <!-- <li>
+          <p><strong>Conference Program Committee Member</strong><br>
+            
+          </p>
+        </li> -->
+
+        <!-- <li>
+          <p><strong>Journal Reviewer</strong><br>
+            
+          </p>
+        </li> -->
+
+      </ul>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <footer style="text-align:right;font-size:14px;margin-top:100px;">
+    <p>
+      <a href="https://github.com/jonbarron/website">credit</a> &nbsp;|&nbsp
+    </p>
+  </footer>
+
+</body>
+
+</html>
