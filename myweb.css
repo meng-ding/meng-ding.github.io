@@ -136,8 +136,9 @@ span.people {
 
   img.bioimage {
     display: block;
-    border-radius: 20%;
+    border-radius: 0;
     max-width: 40%;
+    aspect-ratio: 3 / 4;
   }
 
   body {
