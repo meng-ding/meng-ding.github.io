@@ -17,15 +17,15 @@ body {
 a {
   color: #c46882; 
   text-decoration: none !important; 
-  border-bottom: none !important; 
+  /* border-bottom: none !important;  */
   transition: all 0.3s ease;
 }
 
 a:hover {
   color: #c46882;
   text-decoration: none !important;
-  border-bottom: none !important;
-  background-color: #933751e9; 
+  /* border-bottom: none !important; */
+  background-color: #c46882; 
 }
 
 
