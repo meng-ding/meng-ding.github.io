@@ -1,188 +1,166 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Meng Ding</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link rel="icon" type="image/png" href="images/caticon.png">
-  
-  <link rel="stylesheet" type="text/css" href="myweb.css">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Meng Ding - University at Buffalo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    
+    <link rel="icon" type="image/png" href="images/caticon.png">
+    
+    <link rel="stylesheet" type="text/css" href="myweb.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:100i,200i,400|Cinzel|Playfair+Display:400,400i|Exo:300,600|Roboto:400|Roboto+Condensed:300|Dancing+Script:400|PT+Serif:400,400i|Palanquin+Dark:400|Noto+Serif:400,400i" rel="stylesheet">
 
-  <style>
-    /* 针对折叠列表的样式微调，使其在表格中更美观 */
-    details { margin-top: 10px; padding: 10px; border-radius: 8px; transition: background 0.3s; }
-    details[open] { background: #f9f9f9; }
-    summary { font-size: 1.1em; font-weight: bold; cursor: pointer; outline: none; list-style: none; }
-    summary::-webkit-details-marker { display: none; } /* 隐藏默认箭头 */
-    summary:before { content: "▶ "; color: #666; font-size: 0.8em; }
-    details[open] summary:before { content: "▼ "; }
-    .pub-list { list-style: none; padding-left: 0; margin-top: 15px; }
-    .pub-list li { margin-bottom: 20px; }
-    .me { font-weight: bold; text-decoration: underline; }
-  </style>
+    <style>
+        
+        details { margin-bottom: 15px; padding: 10px; border-bottom: 1px solid #eee; }
+        summary { font-size: 1.2em; font-weight: bold; cursor: pointer; outline: none; list-style: none; color: #333; }
+        summary::-webkit-details-marker { display: none; }
+        summary:before { content: "▶ "; font-size: 0.8em; color: #888; }
+        details[open] summary:before { content: "▼ "; }
+        .pub-list { list-style: none; padding-left: 0; margin-top: 10px; }
+        .pub-list li { margin-bottom: 15px; line-height: 1.5; }
+        .me { font-weight: bold; text-decoration: underline; }
+        
+        .small-globe { width: 80px; margin-top: 15px; opacity: 0.8; transition: opacity 0.3s; }
+        .small-globe:hover { opacity: 1; }
+    </style>
+    
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr style="padding:0px">
-                <td style="padding:2.5%;width:63%;vertical-align:middle">
-                  <p style="text-align:center">
-                    <name>Meng Ding</name>
-                  </p>
-                  <p>
-                    I am currently a Ph.D. student advised by 
-                    <a href="https://cse.buffalo.edu/~jinhui/">Prof. Jinhui Xu</a> and 
-                    <a href="https://cse.buffalo.edu/~kaiyiji/">Prof. Kaiyi Ji</a> at the State University of New York at Buffalo (UB). 
-                    I am also very fortunate to closely work with 
-                    <a href="https://shao3wangdi.github.io/">Prof. Di Wang</a>. 
-                  </p>
-                  <p>
-                    Previously, I received my Bachelor’s degree in Mathematics from China Agricultural University and a second major in Economics from Peking University.
-                  </p>
-                  <p>
-                    My research interest lies in using mathematical insights into deep learning to enable better and safer AI.
-                  </p>
-                  <p>
-                    The best way to reach me is at <strong>[my first name][my last name] (at) buffalo (dot) edu</strong>.
-                  </p>
-                  
-                </td>
-                <td style="padding:2.5%;width:40%;max-width:40%">
-                  <a href="images/meeee.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 10px;" alt="profile photo" src="images/me2.jpg"></a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+    <div class='content' style='display:flex'>
+        <img src="images/meeee.jpg" style="width: 35%; height: auto; object-fit: cover; border-radius: 5px;"/>
+        <div style="margin-left: 30px;">
+            <div class="intro">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Meng Ding</h1>
+                        <p class="lead">
+                            Ph.D. Student in Computer Science<br>
+                            State University of New York at Buffalo (UB)<br>
+                            Buffalo, NY, USA
+                        </p>                                               
+                    </div>
+                </div>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
-                  <heading>Publications</heading>
-                  <p style="font-size: 0.9em;">* indicates equal contribution, &dagger; indicates corresponding author.</p>
-                  
-                  <details open>
-                    <summary>Preprints</summary>
-                    <ul class="pub-list">
-                      <li>
-                        <a href="https://arxiv.org/abs/2506.00759"><papertitle>Black-box Optimization of LLM Outputs by Asking for Directions</papertitle></a><br>
-                        Jie Zhang, <span class="me">Meng Ding</span>, Yang Liu, Jue Hong, Florian Tramèr.
-                      </li>
-                      <li>
-                        <a href="https://arxiv.org/abs/2506.00759"><papertitle>Understanding and Mitigating Cross-lingual Privacy Leakage via Language-specific and Universal Privacy Neurons</papertitle></a><br>
-                        Wenshuo Dong, Qingsong Yang, Shu Yang, Lijie Hu, <span class="me">Meng Ding</span>, Wanyu Lin, Tianhang Zheng, Di Wang.
-                      </li>
-                      <li>
-                        <a href="https://arxiv.org/abs/2501.15963"><papertitle>Evaluating Data Influence in Meta Learning</papertitle></a><br>
-                        Chenyang Ren, Huanyi Xie, Shu Yang, <span class="me">Meng Ding</span>, Lijie Hu, Di Wang.
-                      </li>
-                    </ul>
-                  </details>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="social">
+                            <a href="#"><i class="fa fa-envelope fa-2x"> <span>[first name][last name] (at) buffalo (dot) edu</span></i></a>
+                        </div>
+                        <!-- <div class="social" style="margin-top: 10px;">
+                            <a href="https://github.com/meng-ding" target="_blank"><i class="fa fa-github fa-2x"> <span>GitHub</span></i></a>
+                        </div> -->
+                        <div class="small-globe">
+                            <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=vSPFzfWm34pUkVREShC02uVFvuVjE_61uGArD9vSXBY"></script>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bottom">
+                    <a href="#about-me">
+                        <div class="mouse-icon"><div class="scroll"></div></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                  <details open>
-                    <summary>Selected Papers</summary>
-                    <ul class="pub-list">
-                      <li>
-                        <papertitle>Provable Effects of Data Replay in Continual Learning: A Feature Learning Perspective</papertitle><br>
-                        <span class="me">Meng Ding</span>, Jinhui Xu, Kaiyi Ji.<br>
-                        <em>AISTATS</em>, 2026
-                      </li>
-                      <li>
-                        <a href="https://arxiv.org/abs/2410.03833"><papertitle>Understanding Fine-tuning in Approximate Unlearning: A Theoretical Perspective</papertitle></a><br>
-                        <span class="me">Meng Ding</span>, Rohan Sharma, Changyou Chen, Jinhui Xu, Kaiyi Ji.<br>
-                        <em>TMLR</em>, 2025
-                      </li>
-                      <li>
-                        <a href="https://arxiv.org/abs/2502.17515"><papertitle>Towards User-level Private Reinforcement Learning with Human Feedback</papertitle></a><br>
-                        Jiaming Zhang*, Mingxi Lei*, <span class="me">Meng Ding</span>, Mengdi Li, Zihang Xiang, Difei Xu, Jinhui Xu, Di Wang.<br>
-                        <em>CoLM</em>, 2025
-                      </li>
-                      <li>
-                        <papertitle>Understanding Private Learning From Feature Perspective</papertitle><br>
-                        <span class="me">Meng Ding</span>, Mingxi Lei, Shaopeng Fu, Shaowei Wang, Di Wang, Jinhui Xu.<br>
-                        <em>TPDP</em>, 2025
-                      </li>
-                      <li>
-                        <a href="https://arxiv.org/abs/2503.06009"><papertitle>Nearly Optimal Differentially Private ReLU Regression</papertitle></a><br>
-                        <span class="me">Meng Ding</span>, Mingxi Lei, Shaowei Wang, Tianhang Zheng, Di Wang, Jinhui Xu.<br>
-                        <em>UAI</em>, 2025
-                      </li>
-                      <li>
-                        <papertitle>Improved Rates of Differentially Private Nonconvex-Strongly-Concave Minimax Optimization</papertitle><br>
-                        Ruijia Zhang*, Mingxi Lei*, <span class="me">Meng Ding</span>, Zihang Xiang, Jinhui Xu, Di Wang.<br>
-                        <em>AAAI</em>, 2024
-                      </li>
-                      <li>
-                        <a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/6454dcd80b5373daaa97e53ce32c78a1-Paper-Conference.pdf"><papertitle>Revisiting Differentially Private ReLU Regression</papertitle></a><br>
-                        <span class="me">Meng Ding</span>, Mingxi Lei, Liyang Zhu, Shaowei Wang, Di Wang, Jinhui Xu.<br>
-                        <em>NeurIPS</em>, 2024
-                      </li>
-                      <li>
-                        <a href="https://arxiv.org/abs/2410.13046"><papertitle>Truthful High Dimensional Sparse Linear Regression</papertitle></a><br>
-                        Liyang Zhu, Amina Manseur, <span class="me">Meng Ding</span>, Jinyan Liu, Jinhui Xu, Di Wang.<br>
-                        <em>NeurIPS</em>, 2024
-                      </li>
-                      <li>
-                        <a href="https://arxiv.org/pdf/2405.17583"><papertitle>Understanding Forgetting in Continual Learning with Linear Regression</papertitle></a><br>
-                        <span class="me">Meng Ding</span>, Kaiyi Ji, Di Wang, Jinhui Xu.<br>
-                        <em>ICML</em>, 2024
-                      </li>
-                      <li>
-                        <a href="https://arxiv.org/pdf/2310.07367.pdf"><papertitle>Improved Analysis of Sparse Linear Regression in Local Differential Privacy Model</papertitle></a><br>
-                        Liyang Zhu*, <span class="me">Meng Ding*</span>, Jinhui Xu, Di Wang.<br>
-                        <em>ICLR</em>, 2024
-                      </li>
-                    </ul>
-                  </details>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+    <!-- <nav id="navbar">
+        <div id="nav-container">
+            <div style='border-top: 1px solid #666; border-bottom: 1px solid #666'>
+                <a href="#about-me">About</a>
+                <a href="#Research">Research</a>
+                <a href="#Services">Services</a>
+                <a href="#Maps">Visitor Map</a>
+            </div>
+        </div>
+    </nav> -->
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
-                  <heading>Services</heading>
-                  <p>
-                    <strong>Conference Reviewer:</strong><br>
-                    <a href="https://icml.cc">ICML</a> (2023 - ),
-                    <a href="https://neurips.cc">NeurIPS</a> (2024 - ),
-                    <a href="https://iclr.cc">ICLR</a> (2025 - ),
-                    <a href="https://aistats.org">AISTATS</a> (2024 - )
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+    <div class="content" id="about-me">
+        <h1>About Me</h1>
+        <p>I am currently a Ph.D. student advised by <a href="https://cse.buffalo.edu/~jinhui/">Prof. Jinhui Xu</a> and <a href="https://cse.buffalo.edu/~kaiyiji/">Prof. Kaiyi Ji</a> at the State University of New York at Buffalo (UB). I am also very fortunate to closely work with <a href="https://shao3wangdi.github.io/">Prof. Di Wang</a>.</p>
+        
+        <p>Previously, I received my Bachelor’s degree in Mathematics from China Agricultural University and a second major in Economics from Peking University.</p>
+        
+        <p>My research interest lies in using mathematical insights into deep learning to enable better and safer AI.</p>
+    </div>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle; text-align: center;">
-                  <div style="width:180px; margin: 0 auto;">
-                    <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=vSPFzfWm34pUkVREShC02uVFvuVjE_61uGArD9vSXBY"></script>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+    <div class="content" id="Research">
+        <h1>Research & Publications</h1>
+        <p>† indicates corresponding author, * indicates equal contribution.</p>
 
-          <p style="text-align:right;font-size:small;padding-right:20px;color: #888;">
-            Last updated: Feb 2026. Template by <a href="https://jonbarron.info/">Jon Barron</a>.
-          </p>
+        <details>
+            <summary>Preprints</summary>
+            <ul class="pub-list">
+                <li>
+                    <a href="https://arxiv.org/abs/2506.00759"><b>Black-box Optimization of LLM Outputs by Asking for Directions</b></a><br>
+                    Jie Zhang, <span class="me">Meng Ding</span>, Yang Liu, Jue Hong, Florian Tramèr.
+                </li>
+                <li>
+                    <a href="https://arxiv.org/abs/2506.00759"><b>Understanding and Mitigating Cross-lingual Privacy Leakage via Language-specific and Universal Privacy Neurons</b></a><br>
+                    Wenshuo Dong, Qingsong Yang, Shu Yang, Lijie Hu, <span class="me">Meng Ding</span>, Wanyu Lin, Tianhang Zheng, Di Wang.
+                </li>
+                <li>
+                    <a href="https://arxiv.org/abs/2501.15963"><b>Evaluating Data Influence in Meta Learning</b></a><br>
+                    Chenyang Ren, Huanyi Xie, Shu Yang, <span class="me">Meng Ding</span>, Lijie Hu, Di Wang.
+                </li>
+            </ul>
+        </details>
 
-        </td>
-      </tr>
-    </tbody>
-  </table>
+        <details>
+            <summary>Selected Papers</summary>
+            <ul class="pub-list">
+                <li><b>Provable Effects of Data Replay in Continual Learning: A Feature Learning Perspective</b><br>
+                    <span class="me">Meng Ding</span>, Jinhui Xu, Kaiyi Ji. <i>AISTATS</i>, 2026.</li>
+                
+                <li><a href="https://arxiv.org/abs/2410.03833"><b>Understanding Fine-tuning in Approximate Unlearning: A Theoretical Perspective</b></a><br>
+                    <span class="me">Meng Ding</span>, Rohan Sharma, Changyou Chen, Jinhui Xu, Kaiyi Ji. <i>TMLR</i>, 2025.</li>
+                
+                <li><a href="https://arxiv.org/abs/2502.17515"><b>Towards User-level Private Reinforcement Learning with Human Feedback</b></a><br>
+                    Jiaming Zhang*, Mingxi Lei*, <span class="me">Meng Ding</span>, Mengdi Li, Zihang Xiang, Difei Xu, Jinhui Xu, Di Wang. <i>CoLM</i>, 2025.</li>
+
+                <li><b>Understanding Private Learning From Feature Perspective</b><br>
+                    <span class="me">Meng Ding</span>, Mingxi Lei, Shaopeng Fu, Shaowei Wang, Di Wang, Jinhui Xu. <i>TPDP</i>, 2025.</li>
+
+                <li><a href="https://arxiv.org/abs/2503.06009"><b>Nearly Optimal Differentially Private ReLU Regression</b></a><br>
+                    <span class="me">Meng Ding</span>, Mingxi Lei, Shaowei Wang, Tianhang Zheng, Di Wang, Jinhui Xu. <i>UAI</i>, 2025.</li>
+
+                <li><a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/6454dcd80b5373daaa97e53ce32c78a1-Paper-Conference.pdf"><b>Revisiting Differentially Private ReLU Regression</b></a><br>
+                    <span class="me">Meng Ding</span>, Mingxi Lei, Liyang Zhu, Shaowei Wang, Di Wang, Jinhui Xu. <i>NeurIPS</i>, 2024.</li>
+                
+                <li><a href="https://arxiv.org/pdf/2405.17583"><b>Understanding Forgetting in Continual Learning with Linear Regression</b></a><br>
+                    <span class="me">Meng Ding</span>, Kaiyi Ji, Di Wang, Jinhui Xu. <i>ICML</i>, 2024.</li>
+
+                <li><a href="https://arxiv.org/pdf/2310.07367.pdf"><b>Improved Analysis of Sparse Linear Regression in Local Differential Privacy Model</b></a><br>
+                    Liyang Zhu*, <span class="me">Meng Ding*</span>, Jinhui Xu, Di Wang. <i>ICLR</i>, 2024.</li>
+            </ul>
+        </details>
+    </div>
+
+    <div class="content" id="Services">
+        <h1> Services</h1>
+        <p><strong>Conference Reviewer</strong><br>
+            <a href="https://icml.cc">ICML</a> (2023 - ),
+            <a href="https://neurips.cc">NeurIPS</a> (2024 - ),
+            <a href="https://iclr.cc">ICLR</a> (2025 - ),
+            <a href="https://aistats.org">AISTATS</a> (2024 - ),
+        </p>
+    </div>
+
+    <script>
+        window.onscroll = function() {myFunction()};
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+    </script>
 </body>
 </html>
