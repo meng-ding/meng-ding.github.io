@@ -9,7 +9,7 @@ body {
   font-family: "Noto Sans", sans-serif;
   
  
-  background-color: #f8f1f3; 
+  background-color: #f9f9f9; 
   color: #2e1924; 
 }
 
@@ -31,8 +31,8 @@ a:hover {
 
 /* --- Section 布局 --- */
 .section {
-  padding: 8px 0; /* 缩小了间距 */
-  /* border-bottom: 1px solid rgba(245, 193, 211, 0.65); 淡淡的分割线 */
+  padding: 8px 0;
+  border-bottom: 1px solid #e9c2cd; 
 }
 
 /* --- Bio 区域 --- */
