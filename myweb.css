@@ -74,7 +74,7 @@ a:hover { color: #C4820E; }
 
 /* 图片样式：不再是正方形/椭圆 */
 .bioimage img {
-  width: 180px;      /* 固定宽度，你可以调大或调小 */
+  width: 230px;      /* 固定宽度，你可以调大或调小 */
   height: auto;      /* 自动高度，保持原始比例 */
   border-radius: 8px; /* 轻微圆角，看起来更现代 */
   object-fit: contain;
@@ -82,7 +82,7 @@ a:hover { color: #C4820E; }
 }
 
 /* --- 其他部分样式 --- */
-.section { padding: 20px 0; }
+.section { padding: 10px 0; }
 span.paper { font-weight: bold; }
 span.me { font-weight: 600; }
 
