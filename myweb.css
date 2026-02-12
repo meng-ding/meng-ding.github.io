@@ -54,27 +54,25 @@ section {
   padding: 10px 20px 10px 20px;
 }
 
-/* 名字和地球仪所在的页眉容器 */
 .name-header {
   display: flex;
-  flex-direction: row;     /* 横向排列 */
-  align-items: center;     /* 垂直方向居中对齐 */
-  justify-content: center; /* 整体在页面水平居中 */
-  gap: 15px;               /* 名字和地球仪之间的间距 */
-  width: 100%;
-  margin-bottom: 25px;     /* 与下方简介的间距 */
+  flex-direction: row;
+  align-items: center;      /* 确保两者中心线对齐 */
+  justify-content: flex-start;
+  gap: 12px;                /* 名字和地球仪的间距 */
+  margin-bottom: 20px;
 }
 
-/* 确保 h1 不额外占据整行空间 */
 .name-header h1 {
-  margin: 0;               /* 去掉默认外边距 */
-  text-align: center;
+  margin: 0;
+  line-height: 1.2;         /* 统一行高，方便对齐 */
+  font-size: 32px;          /* 你的名字字号 */
 }
 
-/* 地球仪容器的大小控制 */
 .globe-widget {
-  width: 40px;             /* 稍微给大一点点空间，防止脚本渲染溢出 */
-  height: 40px;
+  /* 关键：使用 em 单位让高度等于文字高度 */
+  height: 1.5em;            
+  width: 1.5em;
   display: flex;
   align-items: center;
   justify-content: center;
