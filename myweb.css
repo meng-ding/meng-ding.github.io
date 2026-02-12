@@ -9,7 +9,7 @@ body {
   font-family: "Noto Sans", sans-serif;
   
  
-  background-color: #f3daef; 
+  background-color: #f6e7ed; 
   color: #333333; 
 }
 
@@ -29,7 +29,7 @@ a:hover {
 
 /* --- Section 布局 --- */
 .section {
-  padding: 15px 0; /* 缩小了间距 */
+  padding: 10px 0; /* 缩小了间距 */
   border-bottom: 1px solid rgba(243, 144, 177, 0.65); /* 淡淡的分割线 */
 }
 
