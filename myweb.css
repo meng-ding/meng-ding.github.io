@@ -35,7 +35,7 @@ a:hover { color: #C4820E; }
   flex-direction: row;
   align-items: center; /* 垂直居中对齐 */
   justify-content: flex-start; /* 靠左对齐 */
-  gap: 15px;
+  gap: 1px;
   margin-bottom: 25px;
 }
 
