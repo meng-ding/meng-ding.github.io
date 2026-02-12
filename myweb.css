@@ -16,16 +16,18 @@ body {
 
 a {
   color: #ee7e98; 
-  text-decoration: none;
-  /* border-bottom: 1px rgba(237, 91, 140, 0.65) solid;  */
+  text-decoration: none !important; 
+  border-bottom: none !important; 
   transition: all 0.3s ease;
 }
 
 a:hover {
   color: #ee7e98;
-  /* border-bottom: 1px #ee7e98 solid; */
+  text-decoration: none !important;
+  border-bottom: none !important;
   background-color: rgba(237, 91, 140, 0.65); 
 }
+
 
 /* --- Section 布局 --- */
 .section {
@@ -95,6 +97,8 @@ span.paper {
 span.me {
   font-weight: 800;
   color: #000000;
+  text-decoration: none !important; 
+  border-bottom: none !important; 
 }
 
 /* --- 移动端适配 --- */
