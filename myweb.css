@@ -23,7 +23,7 @@ a {
 
 a:hover {
   color: #ee7e98;
-  border-bottom: 1px #ee7e98 solid;
+  /* border-bottom: 1px #ee7e98 solid; */
   background-color: rgba(237, 91, 140, 0.65); 
 }
 
