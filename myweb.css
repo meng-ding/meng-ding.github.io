@@ -1,64 +1,75 @@
-/* --- 基础布局 --- */
+/* --- 基础配置 --- */
 body {
   min-height: 100vh;
-  max-width: 800px; /* 整体页面宽度 */
+  max-width: 800px;
   margin: auto;
   padding: 40px 20px;
   line-height: 1.6;
   font-size: 16px;
   font-family: "Noto Sans", sans-serif;
-  color: #000000;
-  background-color: #FFFFFF;
+  
+ 
+  background-color: #f3daef; 
+  color: #333333; 
 }
 
-/* --- 链接样式 --- */
-a { color: #3B7EA1; text-decoration: none; }
-a:hover { color: #C4820E; }
 
-/* --- 深色模式 --- */
-@media (prefers-color-scheme: dark) {
-  body { color: #E1D9D1; background: #121212; }
-  a { color: #C4820E; }
-  a:hover { color: #3B7EA1; }
+a {
+  color: #ee7e98; 
+  text-decoration: none;
+  border-bottom: 1px rgba(237, 91, 140, 0.65) solid; 
+  transition: all 0.3s ease;
 }
 
-/* --- Bio 区域样式 --- */
+a:hover {
+  color: #ee7e98;
+  border-bottom: 1px #ee7e98 solid;
+  background-color: rgba(237, 91, 140, 0.65); 
+}
+
+/* --- Section 布局 --- */
+.section {
+  padding: 15px 0; /* 缩小了间距 */
+  border-bottom: 1px solid rgba(243, 144, 177, 0.65); /* 淡淡的分割线 */
+}
+
+/* --- Bio 区域 --- */
 .bio-container {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
-/* 名字和地球仪容器 */
 .name-header {
   display: flex;
   flex-direction: row;
-  align-items: center; /* 垂直居中对齐 */
-  justify-content: flex-start; /* 靠左对齐 */
-  gap: 1px;
-  margin-bottom: 25px;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
 }
 
+/* 名字颜色也同步调整 */
 .name-header h1 {
   margin: 0;
   font-size: 32px;
-  font-weight: bold;
-  text-align: left;
+  font-weight: 800;
+  color: #2c3e50; 
 }
 
-/* 地球仪缩放：高度随字号 */
+/* 地球仪对齐 */
 .globe-widget {
-  height: 1.2em; 
+  height: 1.2em;
   width: 1.2em;
   display: flex;
   align-items: center;
 }
 
-/* 图文内容包装层 */
+/* 图文并排 */
 .bio-content {
   display: flex;
   flex-direction: row;
-  align-items: flex-start; /* 文字和图片顶部平齐 */
+  align-items: flex-start;
   gap: 40px;
   width: 100%;
 }
@@ -67,39 +78,34 @@ a:hover { color: #C4820E; }
   flex: 1;
 }
 
-.biotext p {
-  margin-top: 0;
-  margin-bottom: 1em;
-}
-
-/* 图片样式：不再是正方形/椭圆 */
+/* 图片：放大并保持原始比例 */
 .bioimage img {
-  width: 250px;      /* 固定宽度，你可以调大或调小 */
-  height: auto;      /* 自动高度，保持原始比例 */
-  border-radius: 8px; /* 轻微圆角，看起来更现代 */
-  object-fit: contain;
-  display: block;
+  width: 220px; /* 已经按你要求放大 */
+  height: auto;
+  border-radius: 10px; /* 稍微大一点的圆角，更现代 */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* 加个淡淡的阴影 */
 }
 
-/* --- 其他部分样式 --- */
-.section { padding: 10px 0; }
-span.paper { font-weight: bold; }
-span.me { font-weight: 600; }
+/* --- Publications 样式 --- */
+span.paper {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+span.me {
+  font-weight: 800;
+  color: #000000;
+  text-decoration: underline dotted; /* 名字下加个点状下划线区分 */
+}
 
 /* --- 移动端适配 --- */
 @media screen and (max-width: 600px) {
   .bio-content {
-    flex-direction: column-reverse; /* 手机端图片在下 */
+    flex-direction: column-reverse;
     align-items: center;
-    text-align: left;
   }
-  
-  .name-header {
-    justify-content: flex-start;
-  }
-
   .bioimage img {
-    width: 150px;
-    margin-top: 20px;
+    width: 200px;
+    margin-bottom: 20px;
   }
 }
