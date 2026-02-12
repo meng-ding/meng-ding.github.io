@@ -1,217 +1,105 @@
-h1 {
-  text-align: left; 
-  font-weight: bold;
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
+/* --- 基础布局 --- */
 body {
   min-height: 100vh;
-  max-width: 800px;
-  border: 0px;
-  padding: 0px;
+  max-width: 800px; /* 整体页面宽度 */
   margin: auto;
-  line-height: 1.5;
+  padding: 40px 20px;
+  line-height: 1.6;
   font-size: 16px;
   font-family: "Noto Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
   color: #000000;
   background-color: #FFFFFF;
 }
 
-a {
-  color: #3B7EA1;
-  text-decoration: none;
-}
+/* --- 链接样式 --- */
+a { color: #3B7EA1; text-decoration: none; }
+a:hover { color: #C4820E; }
 
-a:focus,
-a:hover {
-  color: #C4820E;
-}
-
+/* --- 深色模式 --- */
 @media (prefers-color-scheme: dark) {
-  body {
-    font-weight: 350;
-    color: #E1D9D1;
-    background: #121212;
-  }
-
-  a {
-    color: #C4820E;
-  }
-
-  a:focus,
-  a:hover {
-    color: #3B7EA1;
-  }
-
+  body { color: #E1D9D1; background: #121212; }
+  a { color: #C4820E; }
+  a:hover { color: #3B7EA1; }
 }
 
-section {
-  padding: 10px 20px 10px 20px;
+/* --- Bio 区域样式 --- */
+.bio-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
+/* 名字和地球仪容器 */
 .name-header {
   display: flex;
   flex-direction: row;
-  align-items: center;      /* 确保两者中心线对齐 */
-  justify-content: flex-start;
-  gap: 12px;                /* 名字和地球仪的间距 */
-  margin-bottom: 20px;
+  align-items: center; /* 垂直居中对齐 */
+  justify-content: flex-start; /* 靠左对齐 */
+  gap: 15px;
+  margin-bottom: 25px;
 }
 
 .name-header h1 {
   margin: 0;
-  line-height: 1.2;         /* 统一行高，方便对齐 */
-  font-size: 32px;          /* 你的名字字号 */
+  font-size: 32px;
+  font-weight: bold;
+  text-align: left;
 }
 
+/* 地球仪缩放：高度随字号 */
 .globe-widget {
-  /* 关键：使用 em 单位让高度等于文字高度 */
-  height: 1.5em;            
-  width: 1.5em;
+  height: 1.2em; 
+  width: 1.2em;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
-/* 修改 bio 容器，使其垂直堆叠 */
-#bio {
-  display: flex;
-  flex-direction: column;
-  align-items: center;    /* 确保子元素水平居中 */
-  max-width: 700px;       /* 这里减小数值可以让 bio 区域变窄 */
-  margin: 0 auto;         /* 整体居中 */
-}
-
-/* 名字样式 */
-h1 {
-  width: 100%;
-  text-align: center;     /* 名字居中 */
-  margin-bottom: 30px;    /* 名字与下方内容的间距 */
-  font-size: 2.2rem;
-}
-
-/* 图文包装层：恢复并排对齐 */
+/* 图文内容包装层 */
 .bio-content {
   display: flex;
-  flex-direction: row;    /* 横向排列 */
-  align-items: flex-start;/* 顶部对齐 */
-  gap: 40px;              /* 文字与图片之间的间距 */
+  flex-direction: row;
+  align-items: flex-start; /* 文字和图片顶部平齐 */
+  gap: 40px;
   width: 100%;
 }
 
-/* 文字部分 */
 .biotext {
-  flex: 1;                /* 占据左侧剩余空间 */
-  text-align: left;       /* 简介文字左对齐，符合阅读习惯 */
+  flex: 1;
 }
 
-/* 图片部分 */
+.biotext p {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+/* 图片样式：不再是正方形/椭圆 */
 .bioimage img {
-  width: 180px;           /* 保持图片大小适中 */
-  height: auto;
-  border-radius: 50%;     /* 如果你喜欢圆形照片，保留这个 */
-  object-fit: cover;
-}
-div.content {
-  padding: 0px;
+  width: 180px;      /* 固定宽度，你可以调大或调小 */
+  height: auto;      /* 自动高度，保持原始比例 */
+  border-radius: 8px; /* 轻微圆角，看起来更现代 */
+  object-fit: contain;
+  display: block;
 }
 
-h1 {
-  text-align: center;
-  font-weight: normal;
-  font-size: min(5vw, 30px);
-}
+/* --- 其他部分样式 --- */
+.section { padding: 20px 0; }
+span.paper { font-weight: bold; }
+span.me { font-weight: 600; }
 
-/* h2 {
-  font-weight: normal;
-} */
-
-span.paper {
-  font-weight: bold;
-}
-
-span.author {
-  font-weight: normal;
-}
-
-span.me {
-  font-weight: 600;
-  /* font-style: italic; */
-  /* text-decoration: underline; */
-}
-
-span.venue {
-  font-weight: normal;
-}
-
-span.seminar {
-  font-weight: normal;
-  font-style: italic;
-}
-
-span.location {
-  font-weight: 600;
-}
-
-span.people {
-  font-weight: normal;
-  white-space: nowrap;
-}
-
+/* --- 移动端适配 --- */
 @media screen and (max-width: 600px) {
-  div#bio {
-    display: block;
-  }
-
   .bio-content {
-    flex-direction: column-reverse; 
+    flex-direction: column-reverse; /* 手机端图片在下 */
     align-items: center;
-    text-align: center;
+    text-align: left;
   }
   
-  h1 {
-    text-align: center;
+  .name-header {
+    justify-content: flex-start;
   }
 
-  div#biotext {
-    display: block;
-    max-width: 100%;
+  .bioimage img {
+    width: 150px;
+    margin-top: 20px;
   }
-
-  img#bioimage {
-    display: block;
-    border-radius: 20%;
-    max-width: 40%;
-  }
-
-  body {
-    max-width: 100%;
-    font-size: 14px;
-  }
-}
-
-
-
-figure {
-  max-width: min(100%,400px);
-  display: block; 
-  margin: auto;
-  padding: 10px;
-}
-
-figure img {
-  object-fit: cover;
-  border-radius: 20%;
-  max-width: 100%;
-  width: auto;
-  height: auto;
-}
-
-figure figcaption {
-    text-align: center;
 }
