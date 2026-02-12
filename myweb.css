@@ -9,7 +9,7 @@ body {
   font-family: "Noto Sans", sans-serif;
   
  
-  background-color: #f7e1e8; 
+  background-color: #f8f1f3; 
   color: #2e1924; 
 }
 
@@ -56,7 +56,7 @@ a:hover {
   margin: 0;
   font-size: 32px;
   font-weight: 800;
-  color: #482838; 
+  color: rgb(51, 28, 40); 
 }
 
 /* 地球仪对齐 */
@@ -91,14 +91,14 @@ a:hover {
 /* --- Publications 样式 --- */
 span.paper {
   font-weight: bold;
-  color: #482838;
+  color: rgb(51, 28, 40);
   text-decoration: none !important;
   border-bottom: none !important;
 }
 
 span.me {
   font-weight: 800;
-  color: #2e1924;
+  color: rgb(37, 20, 29);
   text-decoration: none !important; 
   border-bottom: none !important; 
 }
