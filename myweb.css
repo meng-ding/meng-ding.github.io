@@ -1,0 +1,219 @@
+h1 {
+  text-align: left; 
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+body {
+  min-height: 100vh;
+  max-width: 800px;
+  border: 0px;
+  padding: 0px;
+  margin: auto;
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+a {
+  color: #3B7EA1;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #C4820E;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    font-weight: 350;
+    color: #E1D9D1;
+    background: #121212;
+  }
+
+  a {
+    color: #C4820E;
+  }
+
+  a:focus,
+  a:hover {
+    color: #3B7EA1;
+  }
+
+}
+
+section {
+  padding: 10px 20px 10px 20px;
+}
+
+/* 名字和地球仪所在的页眉容器 */
+.name-header {
+  display: flex;
+  flex-direction: row;     /* 横向排列 */
+  align-items: center;     /* 垂直方向居中对齐 */
+  justify-content: center; /* 整体在页面水平居中 */
+  gap: 15px;               /* 名字和地球仪之间的间距 */
+  width: 100%;
+  margin-bottom: 25px;     /* 与下方简介的间距 */
+}
+
+/* 确保 h1 不额外占据整行空间 */
+.name-header h1 {
+  margin: 0;               /* 去掉默认外边距 */
+  text-align: center;
+}
+
+/* 地球仪容器的大小控制 */
+.globe-widget {
+  width: 40px;             /* 稍微给大一点点空间，防止脚本渲染溢出 */
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 修改 bio 容器，使其垂直堆叠 */
+#bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;    /* 确保子元素水平居中 */
+  max-width: 700px;       /* 这里减小数值可以让 bio 区域变窄 */
+  margin: 0 auto;         /* 整体居中 */
+}
+
+/* 名字样式 */
+h1 {
+  width: 100%;
+  text-align: center;     /* 名字居中 */
+  margin-bottom: 30px;    /* 名字与下方内容的间距 */
+  font-size: 2.2rem;
+}
+
+/* 图文包装层：恢复并排对齐 */
+.bio-content {
+  display: flex;
+  flex-direction: row;    /* 横向排列 */
+  align-items: flex-start;/* 顶部对齐 */
+  gap: 40px;              /* 文字与图片之间的间距 */
+  width: 100%;
+}
+
+/* 文字部分 */
+.biotext {
+  flex: 1;                /* 占据左侧剩余空间 */
+  text-align: left;       /* 简介文字左对齐，符合阅读习惯 */
+}
+
+/* 图片部分 */
+.bioimage img {
+  width: 180px;           /* 保持图片大小适中 */
+  height: auto;
+  border-radius: 50%;     /* 如果你喜欢圆形照片，保留这个 */
+  object-fit: cover;
+}
+div.content {
+  padding: 0px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: normal;
+  font-size: min(5vw, 30px);
+}
+
+/* h2 {
+  font-weight: normal;
+} */
+
+span.paper {
+  font-weight: bold;
+}
+
+span.author {
+  font-weight: normal;
+}
+
+span.me {
+  font-weight: 600;
+  /* font-style: italic; */
+  /* text-decoration: underline; */
+}
+
+span.venue {
+  font-weight: normal;
+}
+
+span.seminar {
+  font-weight: normal;
+  font-style: italic;
+}
+
+span.location {
+  font-weight: 600;
+}
+
+span.people {
+  font-weight: normal;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 600px) {
+  div#bio {
+    display: block;
+  }
+
+  .bio-content {
+    flex-direction: column-reverse; 
+    align-items: center;
+    text-align: center;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+
+  div#biotext {
+    display: block;
+    max-width: 100%;
+  }
+
+  img#bioimage {
+    display: block;
+    border-radius: 20%;
+    max-width: 40%;
+  }
+
+  body {
+    max-width: 100%;
+    font-size: 14px;
+  }
+}
+
+
+
+figure {
+  max-width: min(100%,400px);
+  display: block; 
+  margin: auto;
+  padding: 10px;
+}
+
+figure img {
+  object-fit: cover;
+  border-radius: 20%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+figure figcaption {
+    text-align: center;
+}
