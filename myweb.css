@@ -9,30 +9,30 @@ body {
   font-family: "Noto Sans", sans-serif;
   
  
-  background-color: #f5dbe0; 
-  color: #333333; 
+  background-color: #f7e1e8; 
+  color: #2e1924; 
 }
 
 
 a {
-  color: #ee7e98; 
+  color: #c46882; 
   text-decoration: none !important; 
   border-bottom: none !important; 
   transition: all 0.3s ease;
 }
 
 a:hover {
-  color: #ee7e98;
+  color: #c46882;
   text-decoration: none !important;
   border-bottom: none !important;
-  background-color: rgba(237, 91, 140, 0.65); 
+  background-color: #933751e9; 
 }
 
 
 /* --- Section 布局 --- */
 .section {
-  padding: 10px 0; /* 缩小了间距 */
-  border-bottom: 1px solid rgba(245, 193, 211, 0.65); /* 淡淡的分割线 */
+  padding: 8px 0; /* 缩小了间距 */
+  /* border-bottom: 1px solid rgba(245, 193, 211, 0.65); 淡淡的分割线 */
 }
 
 /* --- Bio 区域 --- */
@@ -56,7 +56,7 @@ a:hover {
   margin: 0;
   font-size: 32px;
   font-weight: 800;
-  color: #2c3e50; 
+  color: #482838; 
 }
 
 /* 地球仪对齐 */
@@ -91,12 +91,14 @@ a:hover {
 /* --- Publications 样式 --- */
 span.paper {
   font-weight: bold;
-  color: #2c3e50;
+  color: #482838;
+  text-decoration: none !important;
+  border-bottom: none !important;
 }
 
 span.me {
   font-weight: 800;
-  color: #000000;
+  color: #2e1924;
   text-decoration: none !important; 
   border-bottom: none !important; 
 }
