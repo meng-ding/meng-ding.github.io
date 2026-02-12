@@ -9,7 +9,7 @@ body {
   font-family: "Noto Sans", sans-serif;
   
  
-  background-color: #ffffff; 
+  background-color: #f5dbe0; 
   color: #333333; 
 }
 
@@ -17,7 +17,7 @@ body {
 a {
   color: #ee7e98; 
   text-decoration: none;
-  border-bottom: 1px rgba(237, 91, 140, 0.65) solid; 
+  /* border-bottom: 1px rgba(237, 91, 140, 0.65) solid;  */
   transition: all 0.3s ease;
 }
 
@@ -30,7 +30,7 @@ a:hover {
 /* --- Section 布局 --- */
 .section {
   padding: 10px 0; /* 缩小了间距 */
-  border-bottom: 1px solid rgba(243, 144, 177, 0.65); /* 淡淡的分割线 */
+  border-bottom: 1px solid rgba(245, 193, 211, 0.65); /* 淡淡的分割线 */
 }
 
 /* --- Bio 区域 --- */
@@ -95,7 +95,6 @@ span.paper {
 span.me {
   font-weight: 800;
   color: #000000;
-  text-decoration: underline dotted; /* 名字下加个点状下划线区分 */
 }
 
 /* --- 移动端适配 --- */
