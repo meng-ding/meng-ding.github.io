@@ -1,3 +1,10 @@
+h1 {
+  text-align: left; 
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
 body {
   min-height: 100vh;
   max-width: 800px;
@@ -47,30 +54,32 @@ section {
   padding: 10px 20px 10px 20px;
 }
 
-div#bio {
+/* 名字和图文的父容器 */
+#bio {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column; /* 纵向：名字在上，内容在下 */
 }
 
-div#biotext {
-  display: inline-block;
-  vertical-align: middle;
-  max-width: 60%;
-  /* padding: 10px; */
+/* 图文包装层 */
+.bio-content {
+  display: flex;
+  flex-direction: row;      /* 横向排列文字和图片 */
+  align-items: flex-start;  /* 关键：顶部对齐 */
+  gap: 40px;                /* 文字和图片之间的间距 */
 }
 
-img#bioimage {
-  display: inline-block;
-  vertical-align: middle;
-  object-fit: cover;
-  border-radius: 50%;
-  max-width: 40%;
-  width: auto;
+/* 文字区域 */
+.biotext {
+  flex: 1;                  /* 自动占据左侧剩余空间 */
+  line-height: 1.6;
+}
+
+/* 图片区域 */
+.bioimage img {
+  width: 180px;             /* 固定宽度 */
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  /* padding: 10px; */
+  border-radius: 8px;       /* 稍微圆角一点比较现代，50% 是正圆 */
+  object-fit: cover;
 }
 
 div.content {
@@ -122,6 +131,16 @@ span.people {
 @media screen and (max-width: 600px) {
   div#bio {
     display: block;
+  }
+
+  .bio-content {
+    flex-direction: column-reverse; 
+    align-items: center;
+    text-align: center;
+  }
+  
+  h1 {
+    text-align: center;
   }
 
   div#biotext {
