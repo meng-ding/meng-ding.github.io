@@ -1,41 +1,131 @@
-/* --- 基础配置 --- */
 body {
   min-height: 100vh;
   max-width: 800px;
   margin: auto;
-  padding: 40px 20px;
+  padding: 28px 20px 40px;
   line-height: 1.6;
   font-size: 16px;
   font-family: "Noto Sans", sans-serif;
-  
- 
-  background-color: #f9f9f9; 
-  color: #2e1924; 
+  background-color: #f9f9f9;
+  color: #2e1924;
 }
 
-
 a {
-  color: #c46882; 
-  text-decoration: none !important; 
-  /* border-bottom: none !important;  */
+  color: #c46882;
+  text-decoration: none !important;
   transition: all 0.3s ease;
 }
 
 a:hover {
-  color: #c46882;
+  color: #f9f9f9;
   text-decoration: none !important;
-  /* border-bottom: none !important; */
-  background-color: #c46882; 
+  background-color: #c46882;
 }
 
+p {
+  margin-top: 0;
+}
 
-/* --- Section 布局 --- */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.site-nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 28px;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+  border: 1px solid rgba(233, 194, 205, 0.9);
+  border-radius: 18px;
+  background: rgba(255, 250, 251, 0.92);
+  box-shadow: 0 14px 30px rgba(155, 90, 112, 0.12);
+  backdrop-filter: blur(10px);
+}
+
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 8px 16px;
+  border: 1px solid #e7c0cb;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #ffffff 0%, #fff3f6 100%);
+  font-weight: 600;
+  box-shadow: 0 6px 14px rgba(196, 104, 130, 0.08);
+}
+
+.nav-link.active {
+  color: #f9f9f9;
+  background: linear-gradient(180deg, #cb5575 0%, #b94766 100%);
+  border-color: #b94766;
+  box-shadow: 0 10px 18px rgba(185, 71, 102, 0.24);
+}
+
 .section {
-  padding: 8px 0;
-  border-bottom: 1px solid #e9c2cd; 
+  padding: 10px 0;
+  border-bottom: 1px solid #e9c2cd;
 }
 
-/* --- Bio 区域 --- */
+.section-hero {
+  padding-top: 8px;
+}
+
+.pinned-note {
+  margin: 8px 0 18px;
+  padding: 14px 16px;
+  border: 1px solid #efb2b2;
+  border-left: 4px solid #cc2f2f;
+  border-radius: 12px;
+  background-color: #fff3f3;
+}
+
+.pinned-label {
+  display: inline-block;
+  margin-bottom: 6px;
+  color: #b22222;
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.pin-text {
+  margin-bottom: 0;
+  color: #8f1d1d;
+  font-weight: 600;
+}
+
+.news-list {
+  margin: 0 0 14px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.page-intro h1,
+.name-header h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 800;
+  color: rgb(51, 28, 40);
+}
+
+.page-intro p {
+  margin: 10px 0 0;
+}
+
 .bio-container {
   display: flex;
   flex-direction: column;
@@ -51,15 +141,6 @@ a:hover {
   margin-bottom: 20px;
 }
 
-/* 名字颜色也同步调整 */
-.name-header h1 {
-  margin: 0;
-  font-size: 32px;
-  font-weight: 800;
-  color: rgb(51, 28, 40); 
-}
-
-/* 地球仪对齐 */
 .globe-widget {
   height: 1.2em;
   width: 1.2em;
@@ -67,7 +148,19 @@ a:hover {
   align-items: center;
 }
 
-/* 图文并排 */
+.mini-globe-widget {
+  height: 20px;
+  width: 20px;
+  flex-shrink: 0;
+}
+
+.section-header-with-widget {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
 .bio-content {
   display: flex;
   flex-direction: row;
@@ -80,15 +173,34 @@ a:hover {
   flex: 1;
 }
 
-/* 图片：放大并保持原始比例 */
 .bioimage img {
-  width: 220px; /* 已经按你要求放大 */
+  width: 220px;
   height: auto;
-  border-radius: 10px; /* 稍微大一点的圆角，更现代 */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* 加个淡淡的阴影 */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-/* --- Publications 样式 --- */
+details {
+  border: 1px solid #e9c2cd;
+  border-radius: 14px;
+  background-color: #fffdfd;
+  padding: 14px 18px;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: rgb(51, 28, 40);
+}
+
+summary span {
+  display: inline-block;
+}
+
+.home-page .section {
+  border-bottom: none;
+}
+
 span.paper {
   font-weight: bold;
   color: rgb(51, 28, 40);
@@ -99,18 +211,61 @@ span.paper {
 span.me {
   font-weight: 800;
   color: rgb(37, 20, 29);
-  text-decoration: none !important; 
-  border-bottom: none !important; 
+  text-decoration: none !important;
+  border-bottom: none !important;
 }
 
-/* --- 移动端适配 --- */
+.card-list {
+  display: grid;
+  gap: 18px;
+}
+
+.content-card {
+  padding: 18px 20px;
+  border: 1px solid #e9c2cd;
+  border-radius: 14px;
+  background-color: #fffdfd;
+}
+
+.card-meta {
+  margin-bottom: 8px;
+  color: #9a6678;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.card-title {
+  margin: 0 0 10px;
+  font-size: 22px;
+}
+
 @media screen and (max-width: 600px) {
+  body {
+    padding: 20px 16px 32px;
+  }
+
+  .site-nav {
+    justify-content: center;
+  }
+
+  .nav-links {
+    justify-content: center;
+  }
+
   .bio-content {
     flex-direction: column-reverse;
     align-items: center;
+    gap: 20px;
   }
+
   .bioimage img {
     width: 200px;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
+  }
+
+  .section-header-with-widget {
+    align-items: flex-start;
   }
 }
