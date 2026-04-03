@@ -76,7 +76,7 @@ li {
 
 .section {
   padding: 10px 0;
-  border-bottom: 1px solid #e9c2cd;
+  border-bottom: none;
 }
 
 .section-hero {
@@ -85,21 +85,7 @@ li {
 
 .pinned-note {
   margin: 8px 0 18px;
-  padding: 14px 16px;
-  border: 1px solid #efb2b2;
-  border-left: 4px solid #cc2f2f;
-  border-radius: 12px;
-  background-color: #fff3f3;
-}
-
-.pinned-label {
-  display: inline-block;
-  margin-bottom: 6px;
-  color: #b22222;
-  font-size: 14px;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+  padding: 0;
 }
 
 .pin-text {
@@ -180,11 +166,37 @@ li {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
+.bioimage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  font-weight: 600;
+}
+
+.profile-nav-link {
+  color: #c46882;
+}
+
+.profile-nav-link.active {
+  color: rgb(51, 28, 40);
+}
+
+.profile-nav-separator {
+  margin: 0 8px;
+  color: #9a6678;
+}
+
 details {
-  border: 1px solid #e9c2cd;
-  border-radius: 14px;
-  background-color: #fffdfd;
-  padding: 14px 18px;
+  padding: 0;
 }
 
 summary {
@@ -206,6 +218,11 @@ span.paper {
   color: rgb(51, 28, 40);
   text-decoration: none !important;
   border-bottom: none !important;
+}
+
+.pin-highlight {
+  color: #cc2f2f; 
+  font-weight: 800; 
 }
 
 span.me {

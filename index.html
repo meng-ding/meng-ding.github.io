@@ -22,15 +22,6 @@
 </head>
 
 <body class="home-page">
-  <header class="site-nav">
-    <nav class="nav-links" aria-label="Primary">
-      <a class="nav-link active" href="index.html">Home</a>
-      <a class="nav-link" href="blogs.html">Blogs</a>
-      <a class="nav-link" href="publications.html">Publications</a>
-      <a class="nav-link" href="services.html">Services</a>
-    </nav>
-  </header>
-
   <div class="section section-hero">
     <div id="bio" class="bio-container">
       <div class="name-header">
@@ -59,13 +50,21 @@
 
         <div class="bioimage">
           <img src="images/meee.jpg" alt="Portrait of Meng Ding">
+          <nav class="profile-nav" aria-label="Primary">
+            <a class="profile-nav-link active" href="index.html">Home</a>
+            <span class="profile-nav-separator" aria-hidden="true">|</span>
+            <a class="profile-nav-link" href="blogs.html">Blogs</a>
+            <span class="profile-nav-separator" aria-hidden="true">|</span>
+            <a class="profile-nav-link" href="publications.html">Publications</a>
+            <span class="profile-nav-separator" aria-hidden="true">|</span>
+            <a class="profile-nav-link" href="services.html">Services</a>
+          </nav>
         </div>
       </div>
     </div>
   </div>
 
   <div class="pinned-note">
-    <span class="pinned-label"></span>
     <p class="pin-text">
       [Pinned] I am always open to collaboration and looking for self-motivated students to work on research projects. If you are interested, please email me with your CV attached.
     </p>
@@ -76,8 +75,7 @@
     <div class="content">
       <ul class="news-list">
         <li>[01/2026] Papers accepted to AISTATS 2026 and ICLR 2026.</li>
-      </ul>
-      <details>
+        <details>
         <summary><strong>Prior to 2026</strong></summary>
         <ul>
           <li>[10/2024] One paper accepted to TMLR 2025.</li>
@@ -92,6 +90,7 @@
           <li>[01/2024] One paper accepted to ICLR 2024.</li>
         </ul>
       </details>
+      </ul>
     </div>
   </div>
 </body>
